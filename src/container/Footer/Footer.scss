@@ -27,7 +27,6 @@
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fef4f5;
 
     transition: all 0.3s ease-in-out;
 
@@ -58,7 +57,7 @@
   }
 }
 
-.app__footer-cards .app__footer-card:last-child {
+.app__footer-cards .app__footer-card{
   background-color: #f2f7fb;
 }
 

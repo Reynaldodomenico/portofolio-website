@@ -1,5 +1,5 @@
-import email from '../assets/email.png';
-import mobile from '../assets/mobile.png';
+import email from '../assets/mail.png';
+import mobile from '../assets/telephone.png';
 import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
@@ -15,16 +15,13 @@ import python from '../assets/python.png';
 import react from '../assets/react.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
-
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
-
-import profile from '../assets/profile.png';
+import profile from '../assets/profile2.png';
 import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
-
+import logo from '../assets/logo2.png';
 import adidas from '../assets/adidas.png';
 import amazon from '../assets/amazon.png';
 import asus from '../assets/asus.png';
