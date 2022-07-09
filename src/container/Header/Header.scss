@@ -1,6 +1,6 @@
 #home {
   position: relative;
-  background: url("../../assets/bgIMG.png");
+  background: url("../../assets/6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
@@ -58,6 +58,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
+  
 
   .badge-cmp,
   .tag-cmp {
@@ -66,13 +67,19 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
+    
 
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 
+  .badge-cmp{
+    position: absolute;
+    top: 15em;
+  }
   .tag-cmp {
     flex-direction: column;
-    margin-top: 3rem;
+    position: absolute;
+    top: 25em;
 
     p {
       width: 100%;

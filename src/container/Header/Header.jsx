@@ -44,13 +44,13 @@ const Header = () => (
       className="app__header-img"
     >
       {/* <img src={images.profile} alt="profile" /> */}
-      <motion.img
+      {/* <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: 'easeInOut' }}
         src={images.circle}
         alt="profile_circle"
         className="overlay_circle"
-      />
+      /> */}
     </motion.div>
 
     <motion.div
@@ -58,11 +58,11 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.flutter, images.indonesia, images.sass].map((circle, index) => (
+      {/* {[images.flutter, images.indonesia, images.sass].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>
-      ))}
+      ))} */}
     </motion.div>
   </div>
 );
