@@ -27,6 +27,7 @@ import amazon from '../assets/amazon.png';
 import asus from '../assets/asus.png';
 import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
+import indonesia from '../assets/indonesia.png'
 
 
 export default {
@@ -59,4 +60,5 @@ export default {
   asus,
   bolt,
   nb,
+  indonesia
 };

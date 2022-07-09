@@ -12,9 +12,9 @@ const Navbar = () => {
   
   return (
     <nav className="app__navbar">
-      <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo"/>
-      </div>
+      <a href ={'#home'} className="app__navbar-logo">
+        <img src={images.logo} alt="logo" />
+      </a>
       <ul className="app__navbar-links">
         {att.map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
