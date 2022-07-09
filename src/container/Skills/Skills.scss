@@ -33,6 +33,7 @@
   }
 }
 
+
 .app__skills-item {
   flex-direction: column;
   text-align: center;
@@ -45,7 +46,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #fef4f5;
+    background-color: #f4f5f8;
 
     img {
       width: 50%;
@@ -111,12 +112,15 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-bottom: 1rem;
-    cursor: pointer;
 
     h4 {
       font-weight: 500;
     }
 
+    h6{
+      color: var(--gray-color);
+      font-size: 1rem;
+    }
     p {
       font-weight: 400;
       color: var(--gray-color);
