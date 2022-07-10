@@ -14,15 +14,24 @@
     flex-direction: column;
   }
 }
-.app__abouts-img{
-  flex: 1;
-  height: 100%;
 
+.app__profiles_new{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  @media screen and (max-width: 1200px) {
+    flex-direction: row;
+  }
+}
+.app__abouts-img{
+  
+  height: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-
+ 
   img {
     width: 60%;
     object-fit: contain;

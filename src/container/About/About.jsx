@@ -21,7 +21,7 @@ const About = () => {
     <>
       <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
 
-    <div className="app__profiles">
+    <div className="app__profiles_new">
       <motion.div
       whileInView={{ opacity: [0, 1] }}
       transition={{ duration: 0.5, delayChildren: 0.5 }}
