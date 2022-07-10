@@ -36,23 +36,7 @@ const Header = () => (
           <p className="p-text">Bachelor Student</p>
         </div>
       </div>
-    </motion.div>
-
-    <motion.div
-      whileInView={{ opacity: [0, 1] }}
-      transition={{ duration: 0.5, delayChildren: 0.5 }}
-      className="app__header-img"
-    >
-     
-    </motion.div>
-
-    <motion.div
-      variants={scaleVariants}
-      whileInView={scaleVariants.whileInView}
-      className="app__header-circles"
-    >
-     
-    </motion.div>
+    </motion.div> 
   </div>
 );
 

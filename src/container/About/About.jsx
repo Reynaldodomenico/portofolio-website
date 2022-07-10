@@ -21,22 +21,17 @@ const About = () => {
     <>
       <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
 
-    <div className="app__profiles_new">
-      <motion.div
-      whileInView={{ opacity: [0, 1] }}
-      transition={{ duration: 0.5, delayChildren: 0.5 }}
-      className="app__abouts-img"
-    >
-     <img src={images.profile} alt="" />
-    </motion.div>
+      <div className="app__profiles">
+      <img src={images.profile} alt="" className="app__about-img"/>
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween' }}
-            className="app__profile-item app__profiles"
+            className="app__profile-item"
             key={about.title + index}
           >
+            
             <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
             <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
