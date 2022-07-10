@@ -19,10 +19,10 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
-
-      <div className="app__profiles">
+      <h2 className="head-text">About <span>Me</span> </h2>
       <img src={images.profile} alt="" className="app__about-img"/>
+      <div className="app__profiles">
+      
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}

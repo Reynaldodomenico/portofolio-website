@@ -6,11 +6,11 @@
 
 .app__profiles {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 2rem;
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 720px) {
     margin: auto 4rem;
     flex-direction: column;
   }
@@ -42,13 +42,13 @@
 }
 
 .app__about-img {
- width: 30em;
- margin-right: 2rem;
+ width: 15em;
+ position: relative;
+ top: 20px;
   img {    
     z-index: 1;  
   }
   @media screen and (max-width: 700px) {
     margin: 2rem 0;
-    width: 20em;
   }
 }

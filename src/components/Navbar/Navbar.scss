@@ -12,6 +12,9 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
+  @media screen and (max-width: 900px) {      
+    padding: 1rem 1rem;
+}
 }
 
 .app__navbar-logo {
@@ -26,6 +29,11 @@
     @media screen and (min-width: 2000px) {
       width: 180px;
       height: 40px;
+    }
+
+    @media screen and (max-width: 900px) {      
+        width: 70px;
+        height: 30px;    
     }
   }
 }
