@@ -9,9 +9,31 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 2rem;
-  p{
-    text-align: justify;
+  padding-top: 2rem;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+}
+.app__abouts-img{
+  flex: 1;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    width: 60%;
+    object-fit: contain;
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    margin: 2rem 0;
+    img{
+      width: 60%;
+    }  
   }
 }
 
@@ -29,11 +51,12 @@
     border-radius: 15px;
     object-fit: cover;
   }
-
+  @media screen and (max-width: 1200px) {
+    margin: 2rem auto ;
+  }
   @media screen and (min-width: 2000px) {
     width: 370px;
-    margin: 2rem 4rem;
-
+  
     img {
       height: 320px;
     }

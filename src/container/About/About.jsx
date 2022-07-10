@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
+import { images } from '../../constants';
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -20,13 +21,20 @@ const About = () => {
     <>
       <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
 
-      <div className="app__profiles">
+    <div className="app__profiles">
+      <motion.div
+      whileInView={{ opacity: [0, 1] }}
+      transition={{ duration: 0.5, delayChildren: 0.5 }}
+      className="app__abouts-img"
+    >
+     <img src={images.profile} alt="" />
+    </motion.div>
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween' }}
-            className="app__profile-item"
+            className="app__profile-item app__profiles"
             key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
