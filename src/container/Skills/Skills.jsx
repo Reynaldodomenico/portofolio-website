@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import ReactTooltip from 'react-tooltip';
+import React, { useEffect, useState } from 'react';
 
+import { client, urlFor } from '../../client';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
 import './Skills.scss';
 
 const Skills = () => {
@@ -47,7 +46,7 @@ const Skills = () => {
           ))}
         </motion.div>
         <div className="app__skills-exp">
-          {experiences.map((experience) => (
+          {experiences.sort((a, b) => new Date(a.priority) - new Date(b.priority)).map((experience) => (
             <motion.div
               className="app__skills-exp-item"
               key={experience.year}

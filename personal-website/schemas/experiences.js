@@ -4,6 +4,11 @@ export default{
     type: 'document',
     fields:[
         {
+            name: 'priority',
+            title: 'Priority',
+            type: 'number',
+          },
+        {
             name:'year',
             title:'Year',
             type:'string'

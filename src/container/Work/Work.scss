@@ -4,6 +4,16 @@
   flex-direction: column;
 }
 
+.app_work-hidden{
+  display: none;
+}
+
+.app__work-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .app__work-filter {
   display: flex;
   flex-direction: row;
